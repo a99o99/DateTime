@@ -9,17 +9,8 @@ public class DayElement : MonoBehaviour
 {
     public TextMeshProUGUI textDay;
 
-    public void Init(int __i, int __firstDayOfWeek)
+    public void Init()
     {
-        textDay.text = (__i - __firstDayOfWeek + 1).ToString();
-        switch((__i + 7) % 7)
-        {
-            case 0:
-                textDay.color = Color.red;
-                break;
-            case 6: 
-                textDay.color = Color.blue;
-                break;
-        }
+        Debug.Log("Setting day");
     }
 }
