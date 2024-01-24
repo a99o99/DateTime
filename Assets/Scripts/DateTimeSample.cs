@@ -8,28 +8,26 @@ public class DateTimeSample : MonoBehaviour
 {
     void Start()
     {
-        // // DateTime dateTime = new DateTime();
-        // DateTime dateTime = new DateTime(2024, 01, 21);     // 년, 월, 일
-        // DateTime dateTime_second = new DateTime(2024, 01, 21, 22, 20, 30);     // 년, 월, 일, 시, 분, 초
-        // DateTime dateTime_millisecond = new DateTime(2024, 01, 21, 10, 20, 30, 500);     // 년, 월, 일, 시, 분, 초, 밀리초
-        // DateTime dateTime_kindLocal = new DateTime(2022, 1, 16, 10, 30, 45, 500, DateTimeKind.Local); // 년, 월, 일, 시, 분, 초, 밀리초, 특정 국가/지역의 시간대
-        // // DateTime dateTime_kindLocalCalendar = new DateTime(2022, 1, 16, 12, 30, 45, 500, DateTimeKind.Local, new GregorianCalendar());  // 년, 월, 일, 시, 분, 초, 밀리초, 특정 국가/지역의 시간대, 캘린더
+        DateTime dateTime = new DateTime(2024, 01, 21);     // 년, 월, 일
+        DateTime dateTime_second = new DateTime(2024, 01, 21, 22, 20, 30);     // 년, 월, 일, 시, 분, 초
+        DateTime dateTime_millisecond = new DateTime(2024, 01, 21, 10, 20, 30, 500);     // 년, 월, 일, 시, 분, 초, 밀리초
+        DateTime dateTime_kindLocal = new DateTime(2022, 1, 16, 10, 30, 45, 500, DateTimeKind.Local); // 년, 월, 일, 시, 분, 초, 밀리초, 특정 국가/지역의 시간대
+        // DateTime dateTime_kindLocalCalendar = new DateTime(2022, 1, 16, 12, 30, 45, 500, DateTimeKind.Local, new GregorianCalendar());  // 년, 월, 일, 시, 분, 초, 밀리초, 특정 국가/지역의 시간대, 캘린더
 
-        // long currentTicks = DateTime.Now.Ticks;
-        // DateTime dateTime_ticks = new DateTime(currentTicks);
+        long currentTicks = DateTime.Now.Ticks;
+        DateTime dateTime_ticks = new DateTime(currentTicks);
 
-        // Debug.Log("dateTime : "+ dateTime);
-        // Debug.Log("dateTime_second : "+ dateTime_second);
-        // Debug.Log("dateTime_millisecond : "+ dateTime_millisecond);
-        // Debug.Log("dateTime_kindLocal : "+ dateTime_kindLocal);
+        Debug.Log("dateTime : "+ dateTime);
+        Debug.Log("dateTime_second : "+ dateTime_second);
+        Debug.Log("dateTime_millisecond : "+ dateTime_millisecond);
+        Debug.Log("dateTime_kindLocal : "+ dateTime_kindLocal);
 
-        // Debug.Log("currentTicks : "+ currentTicks + ", dateTime_ticks : "+ dateTime_ticks);
+        Debug.Log("currentTicks : "+ currentTicks + ", dateTime_ticks : "+ dateTime_ticks);
 
         DateTime current = DateTime.Now;
         DateTime utcTime = DateTime.UtcNow;
 
         Debug.Log("current : "+ current);
-        // Debug.Log("utcTime : "+ utcTime);
 
 
         // year 
